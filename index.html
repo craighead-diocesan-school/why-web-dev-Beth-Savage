@@ -39,12 +39,6 @@
  * {
     font-family: sans-serif;
   }
-
-  h1 {
-    text-align: center;
-    background-color: orangered;
-  }
-
   a {
     text-decoration: none;
     color: black;
@@ -65,10 +59,12 @@
       background-color: lightgray; 
       padding: 5px;
       margin: 5px;
+      grid-area: f;
    }
    nav{
-    margin-top: 1em;
+    margin-top: 40px;
     background-color: rgb(248, 248, 248);
+    grid-area: n;
    }
    body {
     display: grid;
@@ -80,11 +76,15 @@
 
   header { 
     grid-area: h;
-    margin-bottom:10px;
+    text-align: center;
+    background-color: orangered;
+    padding-bottom: 80px;
    }
-  nav    { grid-area: n; }
-  main   { grid-area: m; }
-  footer { grid-area: f; }
+  main   
+  { grid-area: m;
+    margin: 20px;   
+  }
+  
 </style>
 </body>
 </html>
