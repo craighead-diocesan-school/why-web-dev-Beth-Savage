@@ -13,7 +13,7 @@
 <h1> Why Web Dev? </h1>
  </header>
  <nav>
-<a class="active" href="index.html">  Home-Why Web Dev</a>
+<a class="active" href="index.html"> Home-Why Web Dev</a>
 <a href="opportunities.html"> Web Dev Opportunities </a>
 <a href="other-careers.html"> Other Careers </a>
  </nav>
@@ -28,7 +28,9 @@
   <li> You can build useful applications to make money, help others, or just make your own life easier. </li>
   <li> Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship. </li>
 </ul>
+<div>
 <img src="HTML5_logo.png" alt="The HTML logo">
+</div>
  </main>
  <footer>
   <p>
@@ -39,10 +41,18 @@
  img{ width: 100px;
   margin: 2px;
  }
+ img{
+  width: 30px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+ }
  * {
     font-family: sans-serif;
   }
   a {
+    align-items: center;
+    height: 50px;
+    display: flex;
     text-decoration: none;
     color: black;
     border: 1px solid black;
@@ -51,15 +61,16 @@
     padding-right: 0.5em;
     display: block;
     margin: 7px;
+    text-align:center;
   }
 
   a:hover {
     color: white;
-    background: black;
+    background: rgb(145, 145, 145);
   }
   .active{
     color: white;
-    background: black;
+    background: rgb(145, 145, 145);
   }
   footer{
       text-align: center;
@@ -81,7 +92,6 @@
           / 1fr  5fr  1fr;
     background-color: rgb(255, 228, 213);
   }
-
   header { 
     grid-area: h;
     text-align: center;
